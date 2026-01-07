@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fashion Boutique Design System - Rose/Mauve primary with Gold accent */
+
+@layer base {
+  :root {
+    --background: 280 20% 97%;
+    --foreground: 280 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 280 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 280 15% 20%;
+
+    --primary: 280 25% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 280 20% 92%;
+    --secondary-foreground: 280 15% 20%;
+
+    --muted: 280 10% 88%;
+    --muted-foreground: 280 8% 50%;
+
+    --accent: 35 85% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 280 15% 88%;
+    --input: 280 15% 88%;
+    --ring: 280 25% 35%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 280 25% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 35 85% 52%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 280 15% 88%;
+    --sidebar-ring: 280 25% 35%;
+  }
+
+  .dark {
+    --background: 280 20% 12%;
+    --foreground: 0 0% 95%;
+
+    --card: 280 20% 18%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 280 20% 18%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 280 30% 70%;
+    --primary-foreground: 280 20% 12%;
+
+    --secondary: 280 15% 28%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 280 15% 28%;
+    --muted-foreground: 280 8% 65%;
+
+    --accent: 35 85% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 280 20% 25%;
+    --input: 280 20% 25%;
+    --ring: 280 30% 70%;
+    --sidebar-background: 280 20% 12%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 280 30% 70%;
+    --sidebar-primary-foreground: 280 20% 12%;
+    --sidebar-accent: 35 85% 52%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 280 20% 25%;
+    --sidebar-ring: 280 30% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Inter", sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Cormorant Garamond", serif;
+  }
+}
